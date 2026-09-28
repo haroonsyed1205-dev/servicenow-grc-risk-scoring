@@ -1,0 +1,21 @@
+{
+  "today": "2026-09-28",
+  "risks": [
+    { "id": "RSK001", "name": "Unpatched internet-facing servers", "category": "cyber", "likelihood": 4, "impact": 5,
+      "controls": [
+        { "id": "CTL010", "effectiveness": "effective", "lastTested": "2026-05-01" },
+        { "id": "CTL011", "effectiveness": "partially_effective", "lastTested": "2026-02-10" }
+      ] },
+    { "id": "RSK002", "name": "Manual journal entries without review", "category": "financial", "likelihood": 3, "impact": 4,
+      "controls": [ { "id": "CTL020", "effectiveness": "effective", "lastTested": "2024-11-30" } ] },
+    { "id": "RSK003", "name": "Single data centre", "category": "operational", "likelihood": 2, "impact": 5, "controls": [] }
+  ],
+  "vendors": [
+    { "name": "PayrollCo", "answers": { "data_access": "customer_pii", "system_access": "read_only", "business_critical": "yes",
+      "offshore_processing": "no", "subcontractors": "yes", "soc2_report": "yes", "annual_spend": "over_1m" } },
+    { "name": "CateringCo", "answers": { "data_access": "none", "system_access": "none", "business_critical": "no",
+      "offshore_processing": "no", "subcontractors": "no", "soc2_report": "no", "annual_spend": "under_100k" } },
+    { "name": "SmallSaaS", "answers": { "data_access": "customer_pii", "system_access": "none", "business_critical": "no",
+      "offshore_processing": "no", "subcontractors": "no", "soc2_report": "no", "annual_spend": "under_100k" } }
+  ]
+}
